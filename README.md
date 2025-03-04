@@ -26,13 +26,20 @@ A simple script to export your bookmarks from natomanga.com into a JSON file.
 
     The script generates a JSON file with the following structure:
     ```json
-    [
-        {
-            "title": "Manga Title",
-            "lastUpdated": "Last updated: 2024-01-01 12:00:00"
-        }
-    ]
-    ```
+[
+    {
+        "title": "Manga Title",
+        "lastUpdated": "Last updated: 2024-01-01 12:00:00",
+        "lastChapterRead": "Chapter 10",
+        "lastChapterUpdated": "Chapter 12"
+    },
+    {
+        "title": "Another Manga Title",
+        "lastUpdated": "Last updated: 2024-02-15 18:30:00",
+        "lastChapterRead": "N/A",
+        "lastChapterUpdated": "Chapter 5"
+    }
+]
 ## Error Handling
 
 - The script will automatically retry failed requests up to 3 times
